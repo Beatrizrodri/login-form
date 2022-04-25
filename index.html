@@ -11,5 +11,46 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div id="container">
+      <div id="content">
+        <img id="logo-image" src="./images/logo.svg" alt="" />
+        <div id="form-container">
+          <div id="form">
+            <div id="title">
+              <img src="./images/log-in.svg" id="login-image" alt="" />
+              <h1>Faça seu login</h1>
+            </div>
+
+            <span id="subtitle">Entre com suas informações de cadastro.</span>
+
+            <label class="input-label">E-mail</label>
+            <input id="e-mail" type="email" placeholder="Digite seu e-mail" />
+            <label class="input-label">Senha</label>
+            <input
+              id="password"
+              type="password"
+              placeholder="Digite sua senha"
+            />
+
+            <div id="reminder">
+              <div id="checkbox-container">
+                <input type="checkbox" />
+                <label for="">Lembre-me</label>
+              </div>
+
+              <span id="reminder-text">Esqueci minha senha</span>
+            </div>
+
+            <button id="login-button" type="submit">Entrar</button>
+
+            <span id="register-text-link"
+              >Não tem uma conta?<strong>Registre-se</strong>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div id="image-container"></div>
+    </div>
+  </body>
 </html>
