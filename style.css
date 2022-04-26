@@ -90,7 +90,21 @@ h1 {
 #e-mail {
   width: 335px;
   height: 44px;
+  border: 1px solid #868686;
+  color: #868686;
+  border-radius: 4px;
+  background-color: transparent;
+  background-image: url(./images/mail.svg);
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-position-x: 10px;
+  padding-left: 40px;
+}
+
+#e-mail:focus {
   border: 1px solid #FFC632;
+  box-shadow: 0 0 0 0;
+  outline: 0;
   border-radius: 4px;
   background-color: transparent;
   background-image: url(./images/mail-focus.svg);
@@ -103,7 +117,22 @@ h1 {
 #password {
   width: 335px;
   height: 44px;
+  border: 1px solid #868686;
+  color: #868686;
+  border-radius: 4px;
+  background-color: transparent;
+  background-image: url(./images/lock.svg);
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-position-x: 10px;
+  padding-left: 40px;
+
+}
+
+#password:focus {
   border: 1px solid #FFC632;
+  box-shadow: 0 0 0 0;
+  outline: 0;
   border-radius: 4px;
   background-color: transparent;
   background-image: url(./images/lock-focus.svg);
@@ -111,7 +140,6 @@ h1 {
   background-position: center left;
   background-position-x: 10px;
   padding-left: 40px;
-
 }
 
 #reminder{
@@ -138,12 +166,13 @@ h1 {
 #checkbox-container > input {
   width: 20px;
   height: 20px;
+  accent-color: var(--primary-color);
   border: 1px solid #868686;
   border-radius: 4px;
   margin-right: 10px;
 }
 
-#checkbox-container > label {
+#checkbox-container > span {
   font-family: 'Roboto';
   font-weight: 400;
   font-size: 16px;
