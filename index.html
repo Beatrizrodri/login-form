@@ -27,11 +27,18 @@
             <label class="input-label">E-mail</label>
             <input id="e-mail" type="email" placeholder="Digite seu e-mail" />
             <label class="input-label">Senha</label>
-            <input
-              id="password"
-              type="password"
-              placeholder="Digite sua senha"
-            />
+
+            <div id="password-container">
+              <input
+                id="password-input"
+                type="password"
+                placeholder="Digite sua senha"
+              />
+              <button
+                id="button-eye-password"
+                onclick="(alterVisiblePassword()); (toggleBackgroundImage());"
+              ></button>
+            </div>
 
             <div id="reminder">
               <div id="checkbox-container">
@@ -39,18 +46,19 @@
                 <span>Lembre-me</span>
               </div>
 
-              <span id="reminder-text">Esqueci minha senha</span>
+              <a id="reminder-text">Esqueci minha senha</a>
             </div>
 
             <button id="login-button" type="submit">Entrar</button>
 
             <span id="register-text-link"
-              >Não tem uma conta?<strong>Registre-se</strong>
+              >Não tem uma conta?<a>Registre-se</a>
             </span>
           </div>
         </div>
       </div>
       <div id="image-container"></div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
